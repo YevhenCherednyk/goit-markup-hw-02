@@ -1,28 +1,9 @@
-/* основной цвет текста #757575 */
-
-/* вторичный цвет #212121 */
-
-/* цвет для лого #2196F3 */
-
-/* цвет черный #000000 */
-
-/*  background body:  #E5E5E5 */
-
-/* background header:  #FFFFFF */
-
-/* background footer: #2F303A */
-
-/* вторичный background: #F5F4FA */
-
-/* background Секция заказать услугу: #2F303A */
-
 :root{
 
     /* fonts */
 
     --main-font: "Roboto";
     --secondary-font: "Raleway";
-
 
     /* text colors */
 
@@ -31,6 +12,7 @@
     --decoration-text-color:#2196F3;
     --studio-header-color:#000000;
     --light-text-color:#ffffff;
+    --contacts-text-color:rgba(255, 255, 255, 0.6);
     
     /* background colors */
     --main-ligt-bg-color: #ffffff;
@@ -39,9 +21,7 @@
     --hover-btn-bg-color: #188CE8;
     --secondary-bg-color:#F5F4FA;
 
-     
-
-    /* others */
+     /* others */
    
 }
 
@@ -70,10 +50,6 @@ body {
 
 /* Section Header */
 
-.page-header{
-    background-color: var(--main-ligt-bg-color);
-}
-
 .logo {
     font-family: var(--secondary-font), sans-serif;
     font-weight: 700;
@@ -91,7 +67,7 @@ body {
     font-weight: 500;
     line-height: 1.14;
     letter-spacing: 0.02em;
-    color: #212121;
+    color: var(--secondary-text-color);
 }
 
 .current {
@@ -131,7 +107,7 @@ body {
     color: var(--light-text-color)
     }
 
-.btn {
+.hero-btn {
     font-family: inherit;
     font-weight: 700;
     font-size: 16px;
@@ -143,8 +119,8 @@ body {
     cursor: pointer;
 }
 
-.btn:hover,
-.btn:focus {
+.hero-btn:hover,
+.hero-btn:focus {
     background-color: var(--hover-btn-bg-color);
 }
 
@@ -163,6 +139,7 @@ body {
 
 .feature-title {
     font-weight: 700;
+    font-size: inherit;
     line-height: 1.14;
     letter-spacing: 0.03em;
     text-transform: uppercase;
@@ -170,7 +147,6 @@ body {
 }
 
 .feature-description {
-    font-weight: 400; 
     letter-spacing: 0.03em;
 }
 
@@ -189,11 +165,11 @@ body {
     font-size: 16px;
     line-height: 1.19;  
     text-align: center;
+    letter-spacing: 0.03em;
     color: var(--secondary-text-color);
 }
 
 .member-position {
-    font-weight: 400;
     font-size: 16px;
     line-height: 1.19;
     text-align: center;
@@ -229,7 +205,6 @@ body {
 }
 
 .project-type {
-    font-weight: 400;
     font-size: 16px;
     line-height: 1.88;     
     letter-spacing: 0.03em;
@@ -254,9 +229,8 @@ background-color: var(--main-darck-bg-color);
 }
 
 .contacts-footer{
-    font-weight: 400;
     letter-spacing: 0.03em;
-    color: rgba(255, 255, 255, 0.6);
+    color: var(--contacts-text-color);
 }
 
 .contacts-footer:hover,
